@@ -1,0 +1,19 @@
+.cabecalho h2 {
+    font-style: normal;
+    text-align: center;
+    color: #22333B;
+}
+
+.cabecalho p { 
+    color: #0A0908;
+    font-style: italic;
+  }
+
+  .cabecalho img {
+    float: left;
+    
+  }
+
+  .info p {
+    font-style: normal
+  }
