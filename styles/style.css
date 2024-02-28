@@ -239,7 +239,7 @@ body {
   font-weight: 400;
 
   position: fixed;
-  bottom:0;
+  bottom: 0;
   width: 100%;
 }
 
@@ -264,6 +264,10 @@ body {
 
   .showcase {
     flex-direction: column;
+  }
+
+  .rodape {
+    position: relative;
   }
 }
 
