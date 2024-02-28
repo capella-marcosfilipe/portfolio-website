@@ -27,13 +27,14 @@ body {
 
 .cabecalho__menu {
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
 }
 
 .cabecalho__menu__link {
   font-family: var(--fonte-secundaria);
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: var(--cor-terciaria);
   text-decoration: none;
 }
@@ -43,7 +44,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 50px;
+  gap: 20px;
+}
+
+.presentation__pfp {
+  width: 30%;
+  border-radius: 5%;
+  object-fit: cover;
 }
 
 .presentation__content {
@@ -55,7 +62,7 @@ body {
 
 .presentation__content__title {
   font-family: var(--fonte-primaria);
-  font-size: 30px;
+  font-size: 1.9rem;
   line-height: 52px;
   font-weight: 600;
 }
@@ -64,7 +71,7 @@ body {
   font-family: var(--fonte-secundaria);
   line-height: 30px;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.15rem;
 }
 
 .presentation__content__description__strong {
@@ -92,7 +99,7 @@ body {
 .presentation__portfolio__project__title {
   font-family: var(--fonte-primaria);
   color: var(--cor-terciaria);
-  font-size: 18px;
+  font-size: 1.15rem;
   font-weight: 400;
 }
 
@@ -104,7 +111,7 @@ body {
 
 .presentation__portfolio__project__description__text {
   font-family: var(--fonte-secundaria);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -133,19 +140,13 @@ body {
   color: var(--cor-secundaria);
   text-decoration: none;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.15rem;
   font-weight: 600;
 }
 
 .presentation__portfolio__link:hover {
   background-color: var(--cor-hover);
   color: var(--cor-secundaria);
-}
-
-.presentation__pfp {
-  width: 400px;
-  border-radius: 5%;
-  object-fit: cover;
 }
 
 .presentation__links {
@@ -168,7 +169,7 @@ body {
   color: var(--cor-secundaria);
   text-decoration: none;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.15rem;
   font-weight: 600;
 }
 
@@ -221,12 +222,12 @@ body {
 .showcase__school__title {
   font-family: var(--fonte-primaria);
   color: var(--cor-terciaria);
-  font-size: 18px;
+  font-size: 1.15rem;
 }
 
 .showcase__school__subtitle {
   font-family: var(--fonte-secundaria);
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .rodape {
@@ -234,10 +235,47 @@ body {
   color: var(--cor-primaria);
   background-color: var(--cor-terciaria);
   font-family: var(--fonte-secundaria);
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: 400;
 
   position: fixed;
   bottom:0;
   width: 100%;
+}
+
+/* Tablets */
+@media (max-width: 1200px) {
+  .presentation__pfp {
+    width: 40%;
+  }
+
+  .presentation__content {
+    width: 100%;
+  }
+
+  .presentation__links {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 900px) {
+  .cabecalho {
+    padding: 10%;
+  }
+
+  .cabecalho__menu {
+    justify-content: left;
+    gap: 20px;
+  }
+
+  .presentation {
+    flex-direction: column;
+    padding: 5%;
+  }
+
+  .presentation__pfp {
+    width: 70%;
+  }
 }
