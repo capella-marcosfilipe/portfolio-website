@@ -257,6 +257,14 @@ body {
     flex-direction: column;
     gap: 20px;
   }
+
+  .presentation__portfolio__project__description {
+    flex-direction: column;
+  }
+
+  .showcase {
+    flex-direction: column;
+  }
 }
 
 /* Mobile phones */
